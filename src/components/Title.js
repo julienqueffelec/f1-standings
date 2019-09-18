@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Position, Points, Code, Name, FamilyName, Constructors } from './Styles';
 
@@ -9,20 +9,17 @@ const HeadTitle = styled.div`
 	margin: 0 auto;
 	padding: 10px;
 `;
-
-class Title extends Component {
-	render() {
-		return (
-			<HeadTitle>
-				<Position></Position>
-				<Points>Points</Points>
-				<Code>Code</Code>
-				<Name>Prénom</Name>
-				<FamilyName>Nom</FamilyName>
-				<Constructors>Constructeurs</Constructors>
-			</HeadTitle>
-		);
-	}
-}
+const Title = props => {
+	return (
+		<HeadTitle>
+			<Position></Position>
+			<Points>Points</Points>
+			<Code>Code</Code>
+			<Name>Prénom</Name>
+			<FamilyName>Nom</FamilyName>
+			<Constructors>Constructeurs</Constructors>
+		</HeadTitle>
+	);
+};
 
 export default Title;
