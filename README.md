@@ -9,7 +9,7 @@ Clone this repository and run
 npm install
 ```
 
-And repeat
+And launch the app via
 
 ```
 npm start
